@@ -1,0 +1,229 @@
+html {
+    background: black;
+}
+
+body {
+    width: 40in;
+    height: 30in;
+    margin: auto;
+    margin-top: 1in;
+    margin-bottom: 1in;
+    padding: 0.5in 1in;
+    background-color: white;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+    line-height: 1.2em;
+    font-size: 0.46in;
+}
+
+@page {
+    size: 40in 30in;
+    margin: 0;
+}
+
+@media print {
+    body {
+        margin: 0;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    font-family: 'Raleway';
+}
+
+h1 {
+    font-size: 1in;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 0.75in;
+    font-weight: 400;
+}
+
+p {
+    margin: 0;
+}
+
+p + p {
+    margin-top: 0.25in;
+}
+
+img {
+    margin: 5px;
+}
+
+#title {
+    flex: 1 1 auto;
+}
+
+#title h1 {
+    display: block;
+    text-align: center;
+    margin-top: 0;
+}
+
+.header-side {
+    font-size: 0.4in;
+    display: block;
+    line-height: 1.5em;
+    flex: 0 0 600px;
+}
+
+#title-left {
+    text-align: left;
+}
+
+#title-right {
+    text-align: right;
+}
+
+.container {
+    display: flex;
+}
+
+.container-col {
+    flex-direction: row;
+    margin: 0 -0.5in;
+}
+
+.container-col .column {
+    flex: 0 1 auto;
+    padding: 0 0.5in;
+}
+
+.container-row {
+    flex-direction: column;
+    margin: -0.25in 0;
+}
+
+.container-row .row {
+    flex: 1 0 auto;
+    padding: 0.25in 0;
+}
+
+section h2 {
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-bottom: 1px solid black;
+    padding-bottom: 0.25em;
+    margin: 0;
+}
+
+section .content {
+    padding: 0.25in;
+}
+
+ul li + li {
+    margin-top: 0.5em;
+}
+
+.timeline-background {
+    padding-bottom: 20px;
+    background: repeating-linear-gradient(
+        to right,
+        #fff 0,
+        #fff 1.95%,
+        #eee 1.95%,
+        #eee 2.0833333333333333%
+    );
+}
+
+h3.timeline-title {
+    margin-bottom: 0;
+    text-align: left;
+    font-size: 0.4in;
+}
+
+.timeline {
+    font-size: 0.3in;
+}
+
+.timeline .column {
+    font-size: 0.3in;
+    flex-grow: 1;
+    /* background-color: #222;
+    color: white; */
+    margin: 10px 3px;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    min-height: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.timeline .column .text {
+    position: absolute;
+    font-size: 0.25in;
+    width: max-content;
+    left: 40%;
+    color: black;
+}
+
+.text.text-up {
+    top: -1.3em;
+    transform-origin: top left;
+    transform: rotateZ(-30deg);
+}
+
+.text.text-down {
+    bottom: -1.1em;
+    transform-origin: bottom left;
+    transform: rotateZ(30deg);
+}
+
+.timeline .column .text::before {
+    content: " ";
+    position: absolute;
+    height: 1px;
+    width: 25px;
+    left: -35px;
+    background-color: black;
+    display: block;
+    bottom: 0.5em;
+}
+
+.timeline .column.empty {
+    background: none;
+}
+
+.col-green {
+    background-color: #33b833;
+    color: white;
+}
+
+.col-blue {
+    background-color: #6777d9;
+    color: white;
+}
+
+.col-cyan {
+    background-color: #53b9bd;
+    color: white;
+}
+
+.caption {
+    font-size: 0.3in;
+}
+
+.box {
+    display: inline-block;
+    position: relative;
+    /* background-color: #ddd; */
+    padding: 15px;
+    margin: 5px;
+    text-align: center;
+}
+
+.box caption {
+    font-size: 0.3in;
+    display: block;
+    width: 100%;
+}
